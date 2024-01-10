@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Dawkowania Leków dla Zwierząt</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h2>Kalkulator Dawkowania Leków dla Zwierząt</h2>
+    <form id="doseCalculator">
+        <label>Stężenie leku (mg/ml):</label>
+        <input type="number" id="drugConcentration" required><br><br>
+
+        <label>Waga zwierzęcia (kg):</label>
+        <input type="number" id="animalWeight" required><br><br>
+
+        <label>Dawka na masę ciała (mg/kg):</label>
+        <input type="number" id="dosePerKg" required><br><br>
+
+        <input type="button" value="Oblicz" onclick="calculateDose()">
+        <input type="reset" value="Wyczyść">
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
